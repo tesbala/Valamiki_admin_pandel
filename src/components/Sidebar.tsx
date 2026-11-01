@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
   LayoutDashboard, Package, Tag, ShoppingBag, Users,
-  Image, LogOut, ChevronRight, Mail, Settings,
+  Image, LogOut, ChevronRight, Mail, Settings, FileText,
 } from 'lucide-react';
 import { getActiveUsername, endSession, DEFAULT_ADMIN } from '@/lib/adminAuth';
 
@@ -14,6 +14,7 @@ const navItems = [
   { href: '/dashboard/categories', label: 'Categories', icon: Tag },
   { href: '/dashboard/orders', label: 'Orders', icon: ShoppingBag },
   { href: '/dashboard/banners', label: 'Banners', icon: Image },
+  { href: '/dashboard/blog', label: 'Blog', icon: FileText },
   { href: '/dashboard/users', label: 'Users', icon: Users },
   { href: '/dashboard/subscribers', label: 'Subscribers', icon: Mail },
   { href: '/dashboard/settings', label: 'Settings', icon: Settings },
